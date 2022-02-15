@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+</head>
+<body>
+    <script>
+        /*
+        A program that creates a string that represents an 8x8 grid,
+        using newline characters to separate lines. At each position of the grid is either a
+        space or a # character, passing the string to console.log() to display the board.
+        */
+
+        let board = "";
+        for (let i = 1; i <= 8; i++) {
+            let line = "";
+            let char = 1;
+            if (i % 2 == 0) {
+                while (char <= 8) {
+                    if (char % 2 == 0) {
+                    line += " ";
+                    } else {
+                        line += "#";
+                    }
+                    char += 1;
+                }
+            } else {
+                while (char <= 8) {
+                    if (char % 2 == 0) {
+                    line += "#";
+                    } else {
+                        line += " ";
+                    }
+                    char += 1;
+                }
+            }
+            board += line + "\n";
+        }
+        console.log(board);
+    </script>
+</body>
+</html>
