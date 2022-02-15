@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+</head>
+<body>
+    <h1>FizzBuzz</h1>
+    <p>Open console in Dev Tools to view program results</p>
+    <script>
+        /*
+        Prints all numbers from 1 to 100 in the console, with two exceptions.
+        For numbers divisible by 3, print "Fizz" instead of the number, and
+        for numbers divisible by 5 (and not 3), print "Buzz".
+        */
+       for (let i = 1; i <= 100; i++) {
+           if (i % 5 == 0) {
+               console.log("Buzz")
+           } else if (i % 3 == 0)
+               console.log("Fizz")
+           else {
+               console.log(i)
+           }
+       }
+    </script>
+</body>
+</html>
